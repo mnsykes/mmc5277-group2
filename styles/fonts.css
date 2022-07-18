@@ -1,0 +1,14 @@
+@font-face {
+	font-family: BenguitStd-Book;
+	src: url(../assets/fonts/BenguiatStd-Book.otf);
+}
+
+@font-face {
+	font-family: BenguitStd-Medium;
+	src: url(../assets/fonts/BenguiatStd-Medium.otf);
+}
+
+@font-face {
+	font-family: BenguitStd-Bold;
+	src: url(../assets/fonts/BenguiatStd-Bold.otf);
+}
