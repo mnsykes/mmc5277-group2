@@ -1,0 +1,17 @@
+.heading {
+	font-size: var(--xxl);
+	font-family: var(--st_bold);
+	color: var(--primary_red);
+}
+
+.subheading {
+	font-size: var(--xl);
+	font-family: var(--st_medium);
+	color: var(--accent_red);
+}
+
+.body_text {
+	font-size: var(--sm);
+	color: var(--primary_black);
+	font-family: var(--st_book);
+}
