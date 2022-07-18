@@ -5,3 +5,8 @@
 	scroll-behavior: smooth;
 	font-size: 10px;
 }
+
+.main__wrapper {
+	max-width: 80vw;
+	margin: 0 auto;
+}

@@ -1,4 +1,4 @@
-## Colors
+# Colors
 
 - Primary: #a41d17
 - Background: #0f0f27
@@ -6,21 +6,38 @@
 - Accent 2: #db512d
 - Accent 3: #e12712
 - White: #f1f2f2;
+- Primary color: #0f0f27
 
-## Fonts
-
-Primary color: #0f0f27
+# Fonts
 
 - Logo and headers: ITC Benguiat(https://freefontsdownload.net/free-benguiatstdbold-font-138544.htm)
 
-# Heading 1, 48px
+# Typography
 
-## Heading 2, 30px
+# Heading 1, 4.8rem
 
-### Heading 3, 24px
+## Heading 2, 3rem
 
-#### Heading 4, 18px
+### Heading 3, 2.4rem
 
-##### Heading 5, 15px
+#### Heading 4, 1.8rem
 
-###### Heading 6, 10px
+##### Heading 5, 1.5rem
+
+###### Heading 6, 1rem
+
+# CSS Rules
+
+We will be using rem units rather than pixels for sizing. The base unit is set at 10px to make conversions easy.
+With this setup, 1rem = 10px.
+
+# HTML Rules
+
+```html
+<!-- THIS COMMENT STARTS A CODE BLOCK -->
+<div class="block">
+	<div class="some-content"></div>
+	<div class="some-other-content"></div>
+</div>
+<!-- THIS COMMENT ENDS A CODE BLOCK -->
+```

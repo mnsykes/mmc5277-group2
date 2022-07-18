@@ -10,8 +10,15 @@
 	color: var(--accent_red);
 }
 
-.body_text {
+.body-text {
 	font-size: var(--sm);
 	color: var(--primary_black);
 	font-family: var(--st_book);
+}
+
+a {
+	font-size: var(--sm);
+	text-decoration: none;
+	font-family: var(--st_book);
+	color: var(--primary_white);
 }
