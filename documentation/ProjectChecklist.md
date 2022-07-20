@@ -3,7 +3,7 @@
 - [ ] Responsive on cellphone
 - [ ] Responseive on tablet
 - [ ] Semantic HTML tags
-- [ ] BEM naming convention for CSS
+- [ x ] BEM naming convention for CSS
 - [ ] At least on CSS transition
 - [ ] At least one CSS animation
 - [ ] Include README file
