@@ -10,6 +10,12 @@
 	color: var(--accent_red);
 }
 
+.section-headline {
+	font-size: var(--lg);
+	font-family: var(--st_medium);
+	color: var(--accent_red);
+}
+
 .body-text {
 	font-size: var(--sm);
 	color: var(--primary_black);

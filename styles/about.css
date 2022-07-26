@@ -1,0 +1,73 @@
+.hero__jumbotron_about {
+	background: url(../assets/images/stranger\ things\ season\ 3\ promo.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.heading {
+    text-align: center;
+}
+
+.subheading {
+	text-align: center;
+}
+
+.body-text {
+	font-size: var(--lg);
+}
+
+.poster {
+    float: left;
+    padding-right: 12px;
+}
+
+/* START BUTTON */
+.btn {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 1.5rem 4rem;
+    font-size: 2rem;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    animation: hover .25s ease-in-out forwards;
+}
+
+@keyframes hover {
+    to {
+        transform: translateY(-5px);
+        background-color: var(--primary_white);
+        color: var(--primary_red);
+
+      }
+  }
+
+.btn_primary {
+    text-transform: uppercase;
+	background: var(--primary_red);
+}
+/* END BUTTON */
+
+/* START GALLERY */
+.column {
+    float: left;
+    width: 20%;
+    padding: 5px;
+  }
+  
+  /* CLEAR FLOATS AFTER IMAGE GALLERY */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /* END GALLERY */
