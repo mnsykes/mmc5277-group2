@@ -1,3 +1,33 @@
+/* 
+THESE ARE ALL GENERIC COMPONENTS THAT ARE MEANT TO BE REUSED ON ANY PAGE. THESE RULES DEFINE THE STRUCTURE OF 
+THE COMPONENT: SIZE, SHAPE, ETC. TO CUSTOMIZE ON YOUR PAGE ADD THE CLASS OF THE COMPONENT FROM THIS STYLE SHEET AND THEN CREATE
+A NEW RULE ON THE PAGE SPECIFIC STYLE SHEET TO MODIFY THE COMPONENT USING BEM NAMING CONVENTIONS.
+
+In this example I use card, card-header, card-body, card-footer from components.css to define a card on my page.
+I then add modifier classes to characters.css to add background colors and an image to these elements. 
+
+HTML: 
+<div class="card">
+	<div class="card-header card-header_character"></div>
+	<div class="card-body card-body_character"></div>
+	<div class="card-foote card-footer_character"></div>
+</div>
+
+STYLE SHEET RULE: 
+.card-header_character {
+    background: var(--primary_black);
+}
+
+.card-body_character {
+    background: url('../assets/images/someimage.png');
+}
+
+.card-footer_character {
+    background: var(--primary_red);
+}
+
+*/
+
 /* START HEADER */
 .header {
 	height: 12.5rem;
@@ -49,8 +79,28 @@
 	padding: 1.5rem 4rem;
 }
 
-.btn_primary {
+.btn_primary-red {
 	background: var(--primary_red);
+}
+
+.btn_primary-black {
+	background: var(--primary_black);
+}
+
+.btn_primary-white {
+	background: var(--primary_white);
+}
+
+.btn_accent-green {
+	background: var(--accent_green);
+}
+
+.btn_accent-orange {
+	background: var(--accent_orange);
+}
+
+.btn_accent-red {
+	background: var(--accent_red);
 }
 /* END BUTTONS */
 
@@ -65,12 +115,33 @@
 .hero__jumbotron {
 	height: 100%;
 	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 /* END HERO */
 
+/* START CARDS */
+.card {
+	height: 30rem;
+	width: 35rem;
+}
+
+.card-header,
+.card-footer {
+	height: 20%;
+	width: 100%;
+}
+
+.card-body {
+	height: 80%;
+	width: 100%;
+}
+/* END CARDS */
+
 /* START FOOTER */
 .footer {
-	position: absolute;
+	position: relative;
 	left: 0;
 	bottom: 0;
 	height: 12.5rem;

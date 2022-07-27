@@ -1,6 +1,8 @@
+/* 
+PAGE SPECIFIC STYLES FOR HOME.HTML
+ANY STYLES WRITTEN HERE WILL OVERRIDE ANY OTHER STYLE
+*/
+
 .hero__jumbotron_home {
 	background: url(../assets/images/ST360_03_MindFlayer.webp);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 }
