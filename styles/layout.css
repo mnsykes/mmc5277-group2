@@ -1,0 +1,35 @@
+.grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+		"header"
+		"main"
+		"footer";
+	grid-template-rows: 12.5rem auto 12.5rem;
+}
+
+.main__wrapper {
+	max-width: 80vw;
+	margin: 0 auto;
+	height: auto;
+	grid-area: main;
+	background: green;
+	padding-top: 100px;
+}
+
+.content {
+	min-height: 100%;
+	background: purple;
+}
+
+/* START FLEXBOX */
+.flex_row {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex_col {
+	display: flex;
+	flex-direction: column;
+}
+/* END FLEXBOX */

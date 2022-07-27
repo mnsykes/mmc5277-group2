@@ -12,6 +12,7 @@
 			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/characters.css" />
 		<title>Characters</title>
 	</head>
 	<body>
@@ -25,8 +26,6 @@
 				<div class="nav__links">
 					<a href="about.html" class="nav__link">About</a>
 					<a href="characters.html" class="nav__link">Characters</a>
-					<!-- THIS WILL BE A DROPDOWN -->
-					<a href="#" class="nav__link">Seasons</a>
 					<a href="shop.html" class="nav__link">Shop</a>
 				</div>
 			</nav>
@@ -35,14 +34,59 @@
 		<!-- END HEADER -->
 
 		<!-- START MAIN -->
-		<main class="main_wrapper">
+		<main class="main__wrapper">
 			<!-- START HERO -->
-			<section class="hero"></section>
+			<section class="hero">
+				<div class="hero__jumbotron hero__jumbotron_character">
+					<div class="subheading">Meet the Party</div>
+					<button class="btn btn_primary-red">Button</button>
+				</div>
+			</section>
 			<!-- END HERO -->
 
 			<!-- START CONTENT -->
 			<section class="content">
-				<article class="content__article"></article>
+				<h2 class="subheading">Meet the Party</h2>
+				<!-- START CHARACTER GRID -->
+				<div class="character__grid">
+					<div class="card">
+						<div class="card-header card-header_character">
+							<p class="body-text">Dustin</p>
+						</div>
+						<div class="card-body card-body_character"></div>
+						<div class="card-footer card-footer_character">
+							<p class="body-text">The fun kid with the curly hair</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header card-header_character">
+							<p class="body-text">Mike</p>
+						</div>
+						<div class="card-body card-body_character"></div>
+						<div class="card-footer card-footer_character">
+							<p class="body-text">Annoying</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header card-header_character">
+							<p class="body-text">Eleven</p>
+						</div>
+						<div class="card-body card-body_character"></div>
+						<div class="card-footer card-footer_character">
+							<p class="body-text">Swimming pool super powers</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header card-header_character">
+							<p class="body-text">Will</p>
+						</div>
+						<div class="card-body card-body_character"></div>
+						<div class="card-footer card-footer_character">
+							<p class="body-text">This kid's life sucks</p>
+						</div>
+					</div>
+				</div>
+				<!-- END CHARACTER GRID -->
 			</section>
 			<!-- END CONTENT -->
 		</main>

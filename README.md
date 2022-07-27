@@ -4,7 +4,7 @@
 
 - Carmen Robertson
 - Brendan McPherson
-- Nicole Willis
+- Nicole Wills
 - Matthew Sykes
 
 ## Challenges

@@ -12,38 +12,75 @@
 			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/about.css" />
 		<title>About</title>
 	</head>
 	<body>
-		<!-- START HEADER -->
-		<header class="header">
-			<!-- START NAV -->
-			<nav class="nav">
-				<div class="nav__logo">
-					<a href="home.html" class="subheading">Stranger Things</a>
-				</div>
-				<div class="nav__links">
-					<a href="about.html" class="nav__link">About</a>
-					<a href="characters.html" class="nav__link">Characters</a>
-					<!-- THIS WILL BE A DROPDOWN -->
-					<a href="#" class="nav__link">Seasons</a>
-					<a href="shop.html" class="nav__link">Shop</a>
-				</div>
-			</nav>
-			</nav>
-			<!-- END NAV -->
-		</header>
-		<!-- END HEADER -->
+			<!-- START HEADER -->
+			<header class="header">
+				<!-- START NAV -->
+				<nav class="nav">
+					<div class="nav__logo">
+						<a href="home.html" class="subheading">Stranger Things</a>
+					</div>
+					<div class="nav__links">
+						<a href="about.html" class="nav__link">About</a>
+						<a href="characters.html" class="nav__link">Characters</a>
+						<a href="shop.html" class="nav__link">Shop</a>
+					</div>
+				</nav>
+				</nav>
+				<!-- END NAV -->
+			</header>
+			<!-- END HEADER -->
 
 		<!-- START MAIN -->
-		<main class="main_wrapper">
+		<main class="main__wrapper">
+			<h1 class="heading">In A Little Town Called Hawkins, The World Is Turning Upside Down.</h1>
+			<br>
+			<h2 class="subheading">Stranger Things 4 Is Now Streaming!</h2>
+			<br>
 			<!-- START HERO -->
-			<section class="hero"></section>
+			<section class="hero">
+				<div class="hero__jumbotron hero__jumbotron_about">
+					<!--MS: I STOLE YOUR BTN STYLES BECAUSE THEY WERE REALLY NICE AND THEY ARE NOW A COMPONENT  -->
+					<button class="btn btn_primary-red">Watch Now</button>
+				</div>
+			</section>
 			<!-- END HERO -->
 
 			<!-- START CONTENT -->
 			<section class="content">
-				<article class="content__article"></article>
+				<article class="content__article">
+					<h3 class="section-headline">About Stranger Things</h3>
+					<p class="body-text">
+						<!--MS: WE'LL PROBABLY CHANGE THIS CLASS NAME AT SOME POINT AND MAKE THIS A COMPONENT TO BE USED ON ALL PAGES -->
+						<img class="poster" src="/assets/images/stranger-things-4-poster.jpeg" height="500" alt="Stranger Things 4 Poster"></a> Lorem, 
+						ipsum dolor sit amet consectetur adipisicing elit. Itaque reiciendis quis beatae corrupti illo ipsa aspernatur, 
+						tempore facere aut a! Porro fugiat unde qui voluptas facere assumenda nihil esse similique. Lorem ipsum dolor sit amet consectetur, 
+						adipisicing elit. Esse minima maiores incidunt ad quasi fugiat harum! Omnis beatae reprehenderit commodi officia accusantium, et 
+						vitae fugit vel illum nobis, totam expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsa reprehenderit 
+						at deserunt omnis expedita suscipit sunt adipisci illo ad! Nulla possimus sapiente hic praesentium recusandae mollitia nesciunt 
+						provident nostrum.
+					</p>
+					<h3 class="section-headline">About Season 4</h3>
+					<p class="body-text">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur quae animi dicta adipisci unde doloribus corrupti dolorum veritatis
+						 dolorem eius? Eveniet dignissimos cupiditate doloremque, repudiandae tenetur qui voluptate dolor culpa! Lorem ipsum dolor sit amet 
+						 consectetur adipisicing elit. Rerum eveniet nihil odio mollitia sed voluptas earum temporibus unde quos repellat totam, obcaecati 
+						 doloremque culpa error voluptate alias. At, amet et? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus aliquid 
+						 possimus ipsam placeat dolor numquam maxime, amet esse nihil, tempora cum suscipit, delectus maiores dolores sapiente eveniet deserunt 
+						 repellendus neque!
+					</p>
+					<button class="btn btn_primary-red">Learn More</button>
+				</article>
+				<!--MS: LET'S USE GRID INSTEAD OF FLOATS -->
+				<!-- START IMAGE GALLERY -->
+				<div class="row">
+					<div class="column">
+						<!-- NOTE TO SELF: PUT IMAGES HERE -->
+					</div>
+				</div>
 			</section>
 			<!-- END CONTENT -->
 		</main>

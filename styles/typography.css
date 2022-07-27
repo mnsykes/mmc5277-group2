@@ -1,3 +1,5 @@
+/* MS: I THINK WE MIGHT WANT TO ADJUST OUR FONT SIZES  */
+
 .heading {
 	font-size: var(--xxl);
 	font-family: var(--st_bold);
@@ -6,6 +8,12 @@
 
 .subheading {
 	font-size: var(--xl);
+	font-family: var(--st_medium);
+	color: var(--accent_red);
+}
+
+.section-headline {
+	font-size: var(--lg);
 	font-family: var(--st_medium);
 	color: var(--accent_red);
 }
