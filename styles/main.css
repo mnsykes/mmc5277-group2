@@ -2,9 +2,11 @@
 @import "fonts.css";
 @import "typography.css";
 @import "variables.css";
-@import "buttons.css";
-@import "navigation.css";
+@import "layout.css";
 @import "components.css";
+<<<<<<< Updated upstream
 @import "landing.css";
 @import "home.css";
 @import "about.css";
+=======
+>>>>>>> Stashed changes
