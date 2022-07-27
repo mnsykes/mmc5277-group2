@@ -1,33 +1,187 @@
 /* 
 THESE ARE ALL GENERIC COMPONENTS THAT ARE MEANT TO BE REUSED ON ANY PAGE. THESE RULES DEFINE THE STRUCTURE OF 
-THE COMPONENT: SIZE, SHAPE, ETC. TO CUSTOMIZE ON YOUR PAGE ADD THE CLASS OF THE COMPONENT FROM THIS STYLE SHEET AND THEN CREATE
-A NEW RULE ON THE PAGE SPECIFIC STYLE SHEET TO MODIFY THE COMPONENT USING BEM NAMING CONVENTIONS.
+THE COMPONENT: SIZE, SHAPE, ETC. TO CUSTOMIZE ON YOUR PAGE ADD A MODIFIER CLASS BASED ON THE MAIN COMPONENT CLASS
+TO yourpagename.css USING BEM NAMING CONVENTIONS.
 
-In this example I use card, card-header, card-body, card-footer from components.css to define a card on my page.
-I then add modifier classes to characters.css to add background colors and an image to these elements. 
+THIS STYLE SHEET IS BROKEN INTO TWO PARTS: 
+1. COMPONENTS THAT CAN BE MODIFIED 
+2. COMPONENTS THAT CAN'T BE MODIFIED
 
-HTML: 
+PLEASE DON'T ADD ANY MODIFIER CLASSES TO yourpagename.css FROM THE LIST OF COMPONENTS THAT ARE NOT TO BE MODIFIED.
+*/
+
+/* 
+-----------------------------------------------------------------------------------------
+-----------------------------   MODIFY THESE COMPONENTS    ------------------------------
+-----------------------------------------------------------------------------------------
+*/
+
+/* START BUTTONS 
+
+------------------------------------------------------------------
+LET'S MAKE A BUTTON
+
+1. ADD CLASS OF .btn
+2. CHOOSE COLOR OF BUTTON 
+
+EX. PRIMARY RED BUTTON
+<button class="btn btn_primary-red">Button Text</button>
+------------------------------------------------------------------
+*/
+.btn {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 1.5rem 4rem;
+	font-size: 2rem;
+	transition-duration: 0.4s;
+	border-radius: 10px;
+	text-transform: uppercase;
+}
+
+.btn:hover {
+	animation: hover 0.25s ease-in-out forwards;
+}
+
+@keyframes hover {
+	to {
+		transform: translateY(-5px);
+		background-color: var(--primary_white);
+		color: var(--primary_red);
+	}
+}
+
+.btn_primary-red {
+	background: var(--primary_red);
+}
+
+.btn_primary-black {
+	background: var(--primary_black);
+}
+
+.btn_primary-white {
+	background: var(--primary_white);
+}
+
+.btn_accent-green {
+	background: var(--accent_green);
+}
+
+.btn_accent-orange {
+	background: var(--accent_orange);
+}
+
+.btn_accent-red {
+	background: var(--accent_red);
+}
+/* END BUTTONS */
+
+/* START HERO 
+------------------------------------------------------------------
+THE MAKING OF A HERO!
+
+1. CREATE A SECTION WITH CLASS OF .hero
+2. NEST DIV WITH CLASS OF .hero__jumbotron TO GET BASIC STYLES OF
+   A JUMBOTRON. ADD CLASS OF .hero__jumbotron_<yourpagename>
+3. GO TO yourpagename.css AND ADD THIS RULE: 
+   .hero__jumbotron_yourpagename {
+		background: url('path to image goes here')
+   }
+   THIS MODIFIER CLASS IS WHERE YOU CAN ADD THE IMAGE YOU NEED
+   IN ADDITION TO ANY OTHER STYLING. PLEASE DON'T OVERRIDE BASIC
+   STYLES IN .hero__jumbotron
+
+EX. JUMBOTRON FOR SHOP PAGE
+<section class="hero">
+	<div class="hero__jumbotron hero__jumbotron_shop">
+		[ HERO CONTENT GOES HERE ]
+	</div>
+</section>
+------------------------------------------------------------------
+*/
+.hero {
+	height: 40rem;
+	width: 80vw;
+	background: var(--accent_red);
+	margin: 0 auto;
+}
+
+.hero__jumbotron {
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* END HERO */
+
+/* START CARDS 
+
+------------------------------------------------------------------
+MAKING A CARD
+
+1. CREATE A DIV WITH CLASS OF .card
+2. A CARD HAS THREE PARTS TO IT: HEADER, BODY AND FOOTER, WITH CLASSES
+   OF .card-header, .card-body, .card-footer. THESE CLASSES PROVIDE
+   THE BASIC STYLES FOR A CARD.
+3. ADD CLASSES OF .card-header_yourpagename, .card-body_yourpagename,
+   .card-footer_yourpagename TO EACH PART OF THE CARD.
+4. ADD THOSE MODIFIER CLASSES TO yourpagename.css. THIS IS WHERE
+   YOU CAN ADD CUSTOM COLORS, IMAGES, ETC. PLEASE DON'T OVERWRITE
+   ANY OF THE BASIC STYLING.
+
+EX. CARD FOR CHARACTER PAGE
+
+HTML
 <div class="card">
-	<div class="card-header card-header_character"></div>
+	<div class="card-header card-header_character">
+		<p class="body-text">Dustin</p>
+	</div>
 	<div class="card-body card-body_character"></div>
-	<div class="card-foote card-footer_character"></div>
+	<div class="card-footer card-footer_character">
+		<p class="body-text">The fun kid with the curly hair</p>
+	</div>
 </div>
 
-STYLE SHEET RULE: 
+CSS RULES ADDED TO characters.css
 .card-header_character {
-    background: var(--primary_black);
+	color: var(--primary_white);
 }
 
 .card-body_character {
-    background: url('../assets/images/someimage.png');
+	background: url(../assets/images/ST360_03_MindFlayer.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .card-footer_character {
-    background: var(--primary_red);
+	background: var(--primary_red);
+}
+------------------------------------------------------------------
+*/
+.card {
+	height: 30rem;
+	width: 35rem;
 }
 
-*/
+.card-header,
+.card-footer {
+	height: 20%;
+	width: 100%;
+}
 
+.card-body {
+	height: 80%;
+	width: 100%;
+}
+/* END CARDS */
+
+/* 
+-----------------------------------------------------------------------------------------
+-----------------------------DO NOT MODIFY THESE COMPONENTS------------------------------
+-----------------------------------------------------------------------------------------
+*/
 /* START HEADER */
 .header {
 	height: 12.5rem;
@@ -70,74 +224,6 @@ STYLE SHEET RULE:
 	font-size: var(--lg);
 }
 /* END NAVIGATION */
-
-/* START BUTTONS */
-.btn {
-	border: none;
-	outline: none;
-	cursor: pointer;
-	padding: 1.5rem 4rem;
-}
-
-.btn_primary-red {
-	background: var(--primary_red);
-}
-
-.btn_primary-black {
-	background: var(--primary_black);
-}
-
-.btn_primary-white {
-	background: var(--primary_white);
-}
-
-.btn_accent-green {
-	background: var(--accent_green);
-}
-
-.btn_accent-orange {
-	background: var(--accent_orange);
-}
-
-.btn_accent-red {
-	background: var(--accent_red);
-}
-/* END BUTTONS */
-
-/* START HERO */
-.hero {
-	height: 40rem;
-	width: 80vw;
-	background: var(--accent_red);
-	margin: 0 auto;
-}
-
-.hero__jumbotron {
-	height: 100%;
-	width: 100%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-/* END HERO */
-
-/* START CARDS */
-.card {
-	height: 30rem;
-	width: 35rem;
-}
-
-.card-header,
-.card-footer {
-	height: 20%;
-	width: 100%;
-}
-
-.card-body {
-	height: 80%;
-	width: 100%;
-}
-/* END CARDS */
 
 /* START FOOTER */
 .footer {
