@@ -17,5 +17,5 @@
 - [ ] Styles are consistent
 - [ ] All components are rendered on the page
 - [ ] Commented out code has been deleted
-- [ ] All `<title>` tags have content
+- [x] All `<title>` tags have content
 - [ ] Any comments that are not descriptive are deleted
