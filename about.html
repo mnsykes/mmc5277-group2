@@ -16,7 +16,6 @@
 		<title>About</title>
 	</head>
 	<body>
-		<div class="grid">
 			<!-- START HEADER -->
 			<header class="header">
 				<!-- START NAV -->
@@ -27,8 +26,6 @@
 					<div class="nav__links">
 						<a href="about.html" class="nav__link">About</a>
 						<a href="characters.html" class="nav__link">Characters</a>
-						<!-- THIS WILL BE A DROPDOWN -->
-						<a href="#" class="nav__link">Seasons</a>
 						<a href="shop.html" class="nav__link">Shop</a>
 					</div>
 				</nav>
@@ -36,52 +33,9 @@
 				<!-- END NAV -->
 			</header>
 			<!-- END HEADER -->
-	
-			<!-- START MAIN -->
-			<main class="main__wrapper">
-				<!-- START HERO -->
-				<section class="hero"></section>
-				<!-- END HERO -->
-	
-				<!-- START CONTENT -->
-				<section class="content">
-					<article class="content__article"></article>
-				</section>
-				<!-- END CONTENT -->
-			</main>
-			<!-- END MAIN -->
-	
-			<!-- START FOOTER -->
-			<footer class="footer">
-				<div class="subheading">Stranger Things &copy;Netflix 2022</div>
-				<div class="nav__links">
-					<a
-						href="https://twitter.com/Stranger_Things?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-						class="nav__link"
-						target="_blank"
-					>
-						<i class="fa-brands fa-twitter nav__link_social"></i>
-					</a>
-					<a
-						href="https://www.instagram.com/strangerthingstv/?hl=en"
-						class="nav__link"
-						target="_blank"
-					>
-						<i class="fa-brands fa-instagram nav__link_social"></i>
-					</a>
-					<a href="https://www.facebook.com/StrangerThingsTV/" class="nav__link" target="_blank">
-						<i class="fa-brands fa-facebook nav__link_social"></i>
-					</a>
-				</div>
-<<<<<<< Updated upstream
-			</nav>
-			</nav>
-			<!-- END NAV -->
-		</header>
-		<!-- END HEADER -->
 
 		<!-- START MAIN -->
-		<main class="main_wrapper">
+		<main class="main__wrapper">
 			<h1 class="heading">In A Little Town Called Hawkins, The World Is Turning Upside Down.</h1>
 			<br>
 			<h2 class="subheading">Stranger Things 4 Is Now Streaming!</h2>
@@ -89,7 +43,8 @@
 			<!-- START HERO -->
 			<section class="hero">
 				<div class="hero__jumbotron hero__jumbotron_about">
-					<button class="btn btn_primary">Watch Now</button>
+					<!--MS: I STOLE YOUR BTN STYLES BECAUSE THEY WERE REALLY NICE AND THEY ARE NOW A COMPONENT  -->
+					<button class="btn btn_primary-red">Watch Now</button>
 				</div>
 			</section>
 			<!-- END HERO -->
@@ -99,6 +54,7 @@
 				<article class="content__article">
 					<h3 class="section-headline">About Stranger Things</h3>
 					<p class="body-text">
+						<!--MS: WE'LL PROBABLY CHANGE THIS CLASS NAME AT SOME POINT AND MAKE THIS A COMPONENT TO BE USED ON ALL PAGES -->
 						<img class="poster" src="/assets/images/stranger-things-4-poster.jpeg" height="500" alt="Stranger Things 4 Poster"></a> Lorem, 
 						ipsum dolor sit amet consectetur adipisicing elit. Itaque reiciendis quis beatae corrupti illo ipsa aspernatur, 
 						tempore facere aut a! Porro fugiat unde qui voluptas facere assumenda nihil esse similique. Lorem ipsum dolor sit amet consectetur, 
@@ -116,8 +72,9 @@
 						 possimus ipsam placeat dolor numquam maxime, amet esse nihil, tempora cum suscipit, delectus maiores dolores sapiente eveniet deserunt 
 						 repellendus neque!
 					</p>
-					<button class="btn btn_primary">Learn More</button>
+					<button class="btn btn_primary-red">Learn More</button>
 				</article>
+				<!--MS: LET'S USE GRID INSTEAD OF FLOATS -->
 				<!-- START IMAGE GALLERY -->
 				<div class="row">
 					<div class="column">
@@ -153,10 +110,5 @@
 			</div>
 		</footer>
 		<!-- END FOOTER -->
-=======
-			</footer>
-			<!-- END FOOTER -->
-		</div>
->>>>>>> Stashed changes
 	</body>
 </html>
