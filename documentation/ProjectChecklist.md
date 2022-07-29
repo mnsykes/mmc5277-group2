@@ -1,7 +1,7 @@
 ## Requirements
 
 - [ ] Responsive on cellphone
-- [ ] Responseive on tablet
+- [ ] Responsive on tablet
 - [ ] Semantic HTML tags
 - [ x ] BEM naming convention for CSS
 - [ ] At least one CSS transition
