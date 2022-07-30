@@ -1,24 +1,15 @@
-.character__grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 2.5rem;
-}
-
-.card-header_character {
-	color: var(--primary_white);
-}
-
-.card-body_character {
-	background: url(../assets/images/ST360_03_MindFlayer.webp);
+.hero__jumbotron_character {
+	background: url(../assets/images/stranger\ things\ season\ 3\ promo.jpeg);
+	height: 100%;
+	width: 100%;
+	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
-}
-
-.card-footer_character {
-	background: var(--primary_red);
-}
-
-.hero__jumbotron_character {
-	background: url(../assets/images/ST360_03_MindFlayer.webp);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 3.5rem;
+	align-items: center;
+	text-align: center;
 }

@@ -13,6 +13,7 @@
 - [ ] All links work
 - [ ] All images have been compressed
 - [ ] All images appear and are not distorted
+- [ ] All images have alt descriptions
 - [ ] Pass all Lighthouse tests
 - [ ] Styles are consistent
 - [ ] All components are rendered on the page
