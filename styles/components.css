@@ -220,6 +220,7 @@ CSS RULES ADDED TO characters.css
 .nav__logo {
 	width: 70%;
 	padding-left: 5rem;
+	text-transform: uppercase;
 }
 
 .nav__links {
@@ -232,8 +233,12 @@ CSS RULES ADDED TO characters.css
 
 .nav__link {
 	font-family: var(--st_book);
-	color: var(--primary_red);
 	font-size: var(--md);
+	text-transform: uppercase;
+}
+
+.nav__link:hover {
+	border-bottom: 3px solid var(--primary_red);
 }
 
 .nav__link_social {

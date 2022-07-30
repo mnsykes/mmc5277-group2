@@ -19,19 +19,13 @@ body {
 		"header"
 		"main"
 		"footer";
-	/* grid-template-rows: 12.5rem auto 12.5rem; */
 	grid-template-columns: 100vw;
-	/* gap: 10rem; */
-	/* min-height: 100vh;
-	min-width: 100vw; */
 }
 
 .main__wrapper {
 	max-width: 80vw;
 	margin: 0 auto;
-	/* height: 100%; */
 	grid-area: main;
-	/* padding-top: 100px; */
 }
 
 .content {
