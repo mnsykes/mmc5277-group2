@@ -1,25 +1,35 @@
-.grid {
+#grid {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-areas:
 		"header"
 		"main"
 		"footer";
-	grid-template-rows: 12.5rem auto 12.5rem;
+	/* grid-template-rows: 12.5rem auto 12.5rem; */
+	min-height: 100vh;
+	min-width: 100vw;
 }
 
 .main__wrapper {
 	max-width: 80vw;
 	margin: 0 auto;
-	height: auto;
+	height: 100%;
 	grid-area: main;
 	background: green;
-	padding-top: 100px;
+	/* padding-top: 100px; */
 }
 
 .content {
+	position: relative;
 	min-height: 100%;
 	background: purple;
+}
+
+.card__grid {
+	/* height: 100%; */
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2.5rem;
 }
 
 /* START FLEXBOX */
