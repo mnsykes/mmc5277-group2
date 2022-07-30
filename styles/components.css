@@ -37,6 +37,7 @@ EX. PRIMARY RED BUTTON
 	transition-duration: 0.4s;
 	border-radius: 10px;
 	text-transform: uppercase;
+	color: var(--primary_white);
 }
 
 .btn:hover {

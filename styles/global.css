@@ -62,6 +62,10 @@ body {
 	.nav {
 		flex-direction: column;
 	}
+
+	.card__grid {
+		grid-template-columns: 2fr;
+	}
 }
 /* END TABLET MEDIA QUERIES */
 
@@ -83,5 +87,10 @@ body {
 		width: 60%;
 		justify-content: space-evenly;
 	}
+
+	.card__grid {
+		grid-template-columns: 1fr;
+	}
 }
 /* END MOBILE PHONE MEDIA QUERIES */
+

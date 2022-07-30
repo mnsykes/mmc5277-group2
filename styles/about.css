@@ -9,10 +9,12 @@
 
 .heading {
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .subheading {
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .body-text {
@@ -60,8 +62,25 @@
 	background-position: center;
 }
 
-.card-footer_about {
-	background: var(--primary_red);
+.content__article {
+	padding-bottom: 7rem;
 }
 
 /* END GALLERY */
+
+/* START ARTICLE LINK TRANSITION */
+.read-more {
+	color: var(--accent_red);
+	background-image: linear-gradient(var(--accent_red) 0 0);
+    background-size: 0%;
+    background-repeat: no-repeat;
+    transition: .4s, background-position 0s;
+}
+
+.read-more:hover {
+    color: var(--primary_white);
+    background-size: 100%;
+    background-position: right;
+  }
+
+/* END ARTICLE LINK TRANSITION */
