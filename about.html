@@ -37,7 +37,7 @@
 
 		<!-- START MAIN -->
 		<main class="main__wrapper">
-			<h1 class="heading">In A Little Town Called Hawkins, The World Is Turning Upside Down.</h1>
+			<h1 class="heading">Every ending has a beginning.</h1>
 			<br>
 			<h2 class="subheading">Stranger Things 4 Is Now Streaming!</h2>
 			<br>
@@ -45,19 +45,20 @@
 			<section class="hero">
 				<div class="hero__jumbotron hero__jumbotron_about">
 					<!--MS: I STOLE YOUR BTN STYLES BECAUSE THEY WERE REALLY NICE AND THEY ARE NOW A COMPONENT  -->
-					<button class="btn btn_primary-red">Watch Now</button>
+					<a href="#content" class="btn btn_primary-red">Learn More</a>
 				</div>
 			</section>
 			<!-- END HERO -->
 
 			<!-- START CONTENT -->
-			<section class="content">
+			<section id="content">
+				<h2 class="subheading text-center">About Stranger Things</h2>
+				<br>
+				<div class="content__article-image"><img class="poster" src="/assets/images/stranger-things-4-poster.jpeg" height="500" alt="Stranger Things 4 Poster"></div>
 				<article class="content__article">
-					<h3 class="section-headline">About Stranger Things</h3>
 					<p class="body-text">
 						<!--MS: WE'LL PROBABLY CHANGE THIS CLASS NAME AT SOME POINT AND MAKE THIS A COMPONENT TO BE USED ON ALL PAGES -->
-						<img class="poster" src="/assets/images/stranger-things-4-poster.jpeg" height="500" alt="Stranger Things 4 Poster"></a> Lorem, 
-						ipsum dolor sit amet consectetur adipisicing elit. Itaque reiciendis quis beatae corrupti illo ipsa aspernatur, 
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque reiciendis quis beatae corrupti illo ipsa aspernatur, 
 						tempore facere aut a! Porro fugiat unde qui voluptas facere assumenda nihil esse similique. Lorem ipsum dolor sit amet consectetur, 
 						adipisicing elit. Esse minima maiores incidunt ad quasi fugiat harum! Omnis beatae reprehenderit commodi officia accusantium, et 
 						vitae fugit vel illum nobis, totam expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsa reprehenderit 
@@ -71,42 +72,43 @@
 						 dolorem eius? Eveniet dignissimos cupiditate doloremque, repudiandae tenetur qui voluptate dolor culpa! Lorem ipsum dolor sit amet 
 						 consectetur adipisicing elit. Rerum eveniet nihil odio mollitia sed voluptas earum temporibus unde quos repellat totam, obcaecati 
 						 doloremque culpa error voluptate alias. At, amet et? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus aliquid 
-						 possimus ipsam placeat dolor numquam maxime, amet esse nihil, tempora cum suscipit, delectus maiores dolores sapiente eveniet deserunt 
-						 repellendus neque!
+						 possimus ipsam placeat dolor numquam maxime, amet esse nihil, tempora cum suscipit, delectus maiores dolores sapiente eveniet. <a href="#" class="body-text read-more">Read more...</a>
 					</p>
-					<button class="btn btn_primary-red">Learn More</button>
 				</article>
 				<!--MS: LET'S USE GRID INSTEAD OF FLOATS -->
 				<!-- START IMAGE GALLERY -->
-				<h3 class="section-headline">Catch Up On Stranger Things</h3>
+				<h2 class="subheading text-center">Catch Up On Stranger Things</h2>
+				<br>
 				<div class="about__grid">
 					<div class="card">
 						<div class="card-header card-header_about">
-							<p class="body-text">Season 1</p>
+							<h3 class="section-headline text-center">Season 1</h3>
 						</div>
 						<div class="card-body card-body_about"></div>
-						<div class="card-footer card-footer_about">
-							<p class="body-text">The world is turning upside down.</p>
+							<a href="#"><img src="assets/images/poster1.jpeg" alt="Stranger Things Season One Poster" class="card-image"></a>
+						<div class="card-footer">
+							<p class="body-text text-center">The world is turning upside down.</p>
 						</div>
 					</div>
 					<div class="card">
 						<div class="card-header card-header_about">
-							<p class="body-text">Season 2</p>
+							<h3 class="section-headline text-center">Season 2</h3>
 						</div>
 						<div class="card-body card-body_about">
-							<img src="assets/images/poster2.jpg" alt="Season two poster" class="card-image">
+							<a href="#"><img src="assets/images/poster2.jpg" alt="Stranger Things Season Two Poster" class="card-image"></a>
 						</div>
-						<div class="card-footer card-footer_about">
-							<p class="body-text">Some doors can't be closed.</p>
+						<div class="card-footer">
+							<p class="body-text text-center">Some doors can't be closed.</p>
 						</div>
 					</div>
 					<div class="card">
 						<div class="card-header card-header_about">
-							<p class="body-text">Season 3</p>
+							<h3 class="section-headline text-center">Season 3</h3>
 						</div>
 						<div class="card-body card-body_about"></div>
-						<div class="card-footer card-footer_about">
-							<p class="body-text">One summer can change everything.</p>
+							<a href="#"><img src="/assets/images/poster3.jpeg" alt="Stranger Things Season Three Poster" class="card-image"></a>
+						<div class="card-footer">
+							<p class="body-text text-center">One summer can change everything.</p>
 						</div>
 					</div>
 				</div>
