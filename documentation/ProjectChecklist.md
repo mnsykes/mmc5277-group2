@@ -4,7 +4,7 @@
 - [ ] Responsive on tablet
 - [ ] Semantic HTML tags
 - [ x ] BEM naming convention for CSS
-- [ ] At least one CSS transition
+- [ x ] At least one CSS transition
 - [ x ] At least one CSS animation
 - [ ] Include README file
 
