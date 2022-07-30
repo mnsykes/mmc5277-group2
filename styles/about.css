@@ -27,6 +27,21 @@
 /* MS: LET'S USE GRID INSTEAD OF FLOATS */
 
 /* START GALLERY */
+.hero__jumbotron_about {
+	height: 100%;
+	width: 100%;
+	background: url(../assets/images/stranger\ things\ season\ 3\ promo.jpeg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 3.5rem;
+	align-items: center;
+	text-align: center;
+}
 
 .about__grid {
 	display: grid;
