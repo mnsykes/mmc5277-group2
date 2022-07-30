@@ -3,6 +3,52 @@ PAGE SPECIFIC STYLES FOR HOME.HTML
 ANY STYLES WRITTEN HERE WILL OVERRIDE ANY OTHER STYLE
 */
 
-.hero__jumbotron_home {
-	background: url(../assets/images/ST360_03_MindFlayer.webp);
+.main_wrapper {
+	background-color: none;
+}
+/*
+CR: I WANT TO MAKE THE BACKGROUND COLORS FOR THE DIFFERNET 
+SECTIONS OF THE MAIN VARYING LEVELS OF OPACITY IN ORDER TO ALLOW 
+THE IMAGE BELOW TO PEAK THROUGH. MS DO YOU KNOW HOW TO DO THIS?
+*/
+
+.heading {
+	text-align: center;
+	padding: 1rem;
+	background-color: transparent;
+}
+
+.subheading {
+	text-align: center;
+	padding: 10%;
+	color: whitesmoke;
+}
+
+.hero__jumbotron.hero__jumbotron_home .subheading {
+	color: whitesmoke;
+}
+
+.hero__jumbotron.hero__jumbotron_home {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+}
+
+body {
+	background-image: url(../assets/images/sneaky-arts-main-2\ 2.jpeg);
+}
+
+.main_wrapper {
+	background: none;
+}
+
+.content .subheading {
+	padding: 0;
+}
+.body-text {
+	text-align: center;
+	padding: 0;
+	color: whitesmoke;
 }
