@@ -1,54 +1,39 @@
-/* 
-PAGE SPECIFIC STYLES FOR HOME.HTML
-ANY STYLES WRITTEN HERE WILL OVERRIDE ANY OTHER STYLE
-*/
-
-.main_wrapper {
-	background-color: none;
-}
-/*
-CR: I WANT TO MAKE THE BACKGROUND COLORS FOR THE DIFFERNET 
-SECTIONS OF THE MAIN VARYING LEVELS OF OPACITY IN ORDER TO ALLOW 
-THE IMAGE BELOW TO PEAK THROUGH. MS DO YOU KNOW HOW TO DO THIS?
-*/
-
-.heading {
-	text-align: center;
-	padding: 1rem;
-	background-color: transparent;
-}
-
-.subheading {
-	text-align: center;
-	padding: 10%;
+.hero__jumbotron .hero__jumbotron_home .subheading {
 	color: whitesmoke;
 }
 
-.hero__jumbotron.hero__jumbotron_home .subheading {
-	color: whitesmoke;
-}
-
-.hero__jumbotron.hero__jumbotron_home {
+.home_background{
+	height: 100%;
+	width: 100%;
+	background-image: url(../assets/images/sneaky-arts-main-2\ 2.jpeg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: flex-end;
+	padding-bottom: 3.5rem;
 	align-items: center;
 	text-align: center;
 }
 
-body {
-	background-image: url(../assets/images/sneaky-arts-main-2\ 2.jpeg);
-}
-
-.main_wrapper {
-	background: none;
-}
-
-.content .subheading {
-	padding: 0;
-}
-.body-text {
-	text-align: center;
-	padding: 0;
+.body-text_home, .subheading_home {
 	color: whitesmoke;
+} 
+
+.heading_home {
+	color: whitesmoke;
+}
+
+.subheading_home {
+	font-size: var(--lg);
+}
+
+.header_home, .footer_home {
+	margin: 0;
+}
+
+.content_background {
+	background-color: rgba(3, 48, 11, 0.75);
 }

@@ -16,8 +16,9 @@
 		<title>Home</title>
 	</head>
 	<body>
-		<!-- START HEADER -->
-		<header class="header">
+		<div id="grid">
+			<!-- START HEADER -->
+		<header class="header header_home">
 			<!-- START NAV -->
 			<nav class="nav">
 				<div class="nav__logo">
@@ -34,36 +35,37 @@
 		<!-- END HEADER -->
 
 		<!-- START MAIN -->
-		<main class="main__wrapper">
-			<h1 class="heading">Nerds, Do You Copy?</h1>
-			<h2 class="subheading">Stranger Things 4 Is Now Streaming!</h2>
-			<!-- START HERO -->
-			<section class="hero">
-				<div class="hero__jumbotron hero__jumbotron_home">
-					<h2 class="subheading">Every ending has a beginning.</h2>
-					<button class="btn btn_primary">Watch Now</button>
-				</div>
-			</section>
-			<!-- END HERO -->
-
-			<!-- START CONTENT -->
-			<section class="content">
-				<h2 class="subheading">Return to the Upside Down</h2>
-				<article class="content__article">
-					<p class="body-text">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illum, magni, odio quas
-						commodi iste accusantium porro ea optio quo nobis consequuntur molestias quaerat in sunt
-						recusandae quisquam deleniti illo dignissimos cum. Totam eum error vitae temporibus
-						ipsum eaque voluptatibus!
-					</p>
-				</article>
-			</section>
-			<!-- END CONTENT -->
-		</main>
-		<!-- END MAIN -->
+		<div class="home_background">
+			<main class="main__wrapper" >
+				<h1 class="heading heading_home text-center">Every ending has a beginning.</h1>
+				<h2 class="subheading subheading_home text-center">Stranger Things 4 Is Now Streaming!</h2>
+				<!-- START HERO -->
+				<section class="hero">
+					<div class="hero__jumbotron hero__jumbotron_home">
+						<button class="btn btn_primary">Watch Now </button>
+					</div>
+				</section>
+				<!-- END HERO -->
+	
+				<!-- START CONTENT -->
+				<section id="content" class="content_background">
+					<h2 class="subheading subheading_home text-center">Return to the Upside Down</h2>
+					<article class="content__article">
+						<p class="body-text text-center body-text_home">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illum, magni, odio quas
+							commodi iste accusantium porro ea optio quo nobis consequuntur molestias quaerat in sunt
+							recusandae quisquam deleniti illo dignissimos cum. Totam eum error vitae temporibus
+							ipsum eaque voluptatibus!
+						</p>
+					</article>
+				</section>
+				<!-- END CONTENT -->
+			</main>
+			<!-- END MAIN -->
+		</div>
 
 		<!-- START FOOTER -->
-		<footer class="footer">
+		<footer class="footer footer_home">
 			<div class="subheading">Stranger Things &copy;Netflix 2022</div>
 			<div class="nav__links">
 				<a
@@ -86,5 +88,6 @@
 			</div>
 		</footer>
 		<!-- END FOOTER -->
+		</div>
 	</body>
 </html>
