@@ -30,3 +30,15 @@ a {
 	font-family: var(--st_book);
 	color: var(--primary_white);
 }
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
