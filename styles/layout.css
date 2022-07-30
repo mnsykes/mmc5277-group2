@@ -15,8 +15,8 @@
 	margin: 0 auto;
 	height: 100%;
 	grid-area: main;
-	background: green;
-	/* padding-top: 100px; */
+	background: #03300b;
+	padding-top: 100px;
 }
 
 .content {
