@@ -22,12 +22,14 @@
 				<!-- START NAV -->
 				<nav class="nav">
 					<div class="nav__logo">
-						<a href="home.html" class="subheading">Stranger Things</a>
+						<a href="home.html" class="subheading">
+							<img class="nav__img" src="assets/images/logo.png" alt="Stranger Things Logo" />
+						</a>
 					</div>
 					<div class="nav__links">
-						<a href="about.html" class="nav__link">About</a>
-						<a href="characters.html" class="nav__link">Characters</a>
-						<a href="shop.html" class="nav__link">Shop</a>
+						<a href="about.html" class="nav__link nav__link_nav glow_light">About</a>
+						<a href="characters.html" class="nav__link nav__link_nav glow_light">Characters</a>
+						<a href="shop.html" class="nav__link nav__link_nav glow_light">Shop</a>
 					</div>
 				</nav>
 				<!-- END NAV -->
@@ -36,104 +38,89 @@
 
 			<!-- START MAIN -->
 			<main class="main__wrapper">
-				<h1 class="heading">Meet the Party</h1>
 				<!-- START HERO -->
 				<section class="hero">
 					<div class="hero__jumbotron hero__jumbotron_character">
-						<!-- <h2 class="heading">Meet the Party</h2> -->
-						<!-- <button class="btn btn_primary-red">Button</button> -->
+						<h1 class="heading glow_red">Meet the Party</h1>
+						<a href="#card__grid" class="btn btn_primary-red">Characters</a>
 					</div>
 				</section>
 				<!-- END HERO -->
 
 				<!-- START CONTENT -->
 				<section class="content">
-					<!-- <h2 class="subheading">Meet the Party</h2> -->
 					<!-- START CHARACTER GRID -->
 					<div id="card__grid">
 						<div class="card text-center">
-							<div class="card-header section-headline">Mike</div>
+							<div class="card-header subheading glow_light">Mike</div>
 							<div class="card-body">
 								<img
 									class="card-image"
 									src="assets/images/Mike_Wheeler copy.jpg"
-									alt="Image of collectibles"
+									alt="Image of Mike"
 								/>
 							</div>
 							<div class="card-footer">
-								<p class="body-text"> lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-							
+								<p class="body-text">
+									lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua.
+								</p>
 							</div>
 						</div>
 						<div class="card text-center">
-							<div class="card-header section-headline">Dustin</div>
+							<div class="card-header subheading glow_light">Dustin</div>
 							<div class="card-body">
 								<img
 									class="card-image"
 									src="assets/images/Dustin_Henderson.jpg"
-									alt="Image of collectibles"
+									alt="Image of Dustin"
 								/>
 							</div>
 							<div class="card-footer">
-								<p class="body-text"> lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-							
+								<p class="body-text">
+									lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua.
+								</p>
 							</div>
 						</div>
 						<div class="card text-center">
-							<div class="card-header section-headline">Will</div>
+							<div class="card-header subheading glow_light">Will</div>
 							<div class="card-body">
-								<img
-									class="card-image"
-									src="assets/images/Will_Byers.jpg"
-									alt="Image of collectibles"
-								/>
+								<img class="card-image" src="assets/images/Will_Byers.jpg" alt="Image of Will" />
 							</div>
 							<div class="card-footer">
-
-								<p class="body-text"> lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-								
-
+								<p class="body-text">
+									lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua.
+								</p>
 							</div>
 						</div>
 						<div class="card text-center">
-							<div class="card-header section-headline">Lucas</div>
+							<div class="card-header subheading glow_light">Lucas</div>
 							<div class="card-body">
 								<img
 									class="card-image"
 									src="assets/images/Lucas_sinclair.jpg"
-									alt="Image of collectibles"
+									alt="Image of Lucas"
 								/>
-								
-							
 							</div>
 							<div class="card-footer">
-								<p class="body-text"> lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-							
+								<p class="body-text">
+									lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua.
+								</p>
 							</div>
 						</div>
 						<div class="card text-center">
-							<div class="card-header section-headline">Eleven</h3>
-							<!-- <div class="card-header"></div> -->
+							<div class="card-header subheading glow_light">Eleven</div>
 							<div class="card-body">
-								<img
-									class="card-image"
-									src="assets/images/Eleven.jpg"
-									alt="Image of collectibles"
-								/>
-							
+								<img class="card-image" src="assets/images/Eleven.jpg" alt="Image of Eleven" />
 							</div>
 							<div class="card-footer">
-
-								<p class="body-text"> lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-							
-							</div>
-							
-								
+								<p class="body-text">
+									lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua.
+								</p>
 							</div>
 						</div>
 					</div>
@@ -145,23 +132,30 @@
 
 			<!-- START FOOTER -->
 			<footer class="footer">
-				<div class="subheading">Stranger Things &copy;Netflix 2022</div>
+				<div class="footer__logo">
+					<div class="subheading glow_dark">Stranger Things</div>
+					<div class="subheading glow_dark">&copy;Netflix 2022</div>
+				</div>
 				<div class="nav__links">
 					<a
 						href="https://twitter.com/Stranger_Things?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-						class="nav__link"
+						class="nav__link glow_dark"
 						target="_blank"
 					>
 						<i class="fa-brands fa-twitter nav__link_social"></i>
 					</a>
 					<a
 						href="https://www.instagram.com/strangerthingstv/?hl=en"
-						class="nav__link"
+						class="nav__link glow_dark"
 						target="_blank"
 					>
 						<i class="fa-brands fa-instagram nav__link_social"></i>
 					</a>
-					<a href="https://www.facebook.com/StrangerThingsTV/" class="nav__link" target="_blank">
+					<a
+						href="https://www.facebook.com/StrangerThingsTV/"
+						class="nav__link glow_dark"
+						target="_blank"
+					>
 						<i class="fa-brands fa-facebook nav__link_social"></i>
 					</a>
 				</div>
