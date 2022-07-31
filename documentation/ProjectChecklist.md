@@ -4,7 +4,7 @@
 - [ ] Responsive on tablet
 - [ ] Semantic HTML tags
 - [ x ] BEM naming convention for CSS
-- [ ] At least one CSS transition
+- [ x ] At least one CSS transition
 - [ x ] At least one CSS animation
 - [ ] Include README file
 
@@ -13,6 +13,7 @@
 - [ ] All links work
 - [ ] All images have been compressed
 - [ ] All images appear and are not distorted
+- [ ] All images have alt descriptions
 - [ ] Pass all Lighthouse tests
 - [ ] Styles are consistent
 - [ ] All components are rendered on the page
