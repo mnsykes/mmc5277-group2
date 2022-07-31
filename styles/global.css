@@ -28,9 +28,6 @@ body {
 	padding: 12.5rem 0;
 }
 
-#content {
-}
-
 #card__grid {
 	margin: 0 auto;
 	display: grid;
@@ -73,8 +70,15 @@ body {
 		align-items: center;
 	}
 
+	.nav__logo {
+		width: 100%;
+		text-align: center;
+		padding: 0;
+	}
+
 	.nav__links {
-		width: 60%;
+		padding: 0;
+		width: 100%;
 		justify-content: space-evenly;
 	}
 
