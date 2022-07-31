@@ -1,5 +1,3 @@
-/* MS: DELETED BTN STYLES AND MOVED THEM TO COMPONENTS.CSS FOR EVERYONE TO USE. NICE JOB ON THEM! */
-/* NW: YAY! THANKS! :) */
 .hero__jumbotron_about {
 	background: url(../assets/images/stranger\ things\ season\ 3\ promo.jpeg);
 	/* background-size: cover;
@@ -9,10 +7,12 @@
 
 .heading {
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .subheading {
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .body-text {
@@ -23,8 +23,6 @@
 	float: left;
 	padding-right: 12px;
 }
-
-/* MS: LET'S USE GRID INSTEAD OF FLOATS */
 
 /* START GALLERY */
 .hero__jumbotron_about {
@@ -60,8 +58,25 @@
 	background-position: center;
 }
 
-.card-footer_about {
-	background: var(--primary_red);
+.content__article {
+	padding-bottom: 7rem;
 }
 
 /* END GALLERY */
+
+/* START ARTICLE LINK TRANSITION */
+.read-more {
+	color: var(--accent_red);
+	background-image: linear-gradient(var(--accent_red) 0 0);
+    background-size: 0%;
+    background-repeat: no-repeat;
+    transition: .4s, background-position 0s;
+}
+
+.read-more:hover {
+    color: var(--primary_white);
+    background-size: 100%;
+    background-position: right;
+  }
+
+/* END ARTICLE LINK TRANSITION */
