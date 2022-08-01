@@ -42,26 +42,31 @@ EX. PRIMARY RED BUTTON
 
 .btn:hover {
 	animation: hover 0.25s ease-in-out forwards;
+	box-shadow: 0 0 3px var(--accent_red), 0 0 6px var(--primary_white), 0 0 3px var(--accent_red);
 }
 
 @keyframes hover {
 	to {
 		transform: translateY(-5px);
-		background-color: var(--primary_white);
-		color: var(--primary_red);
+		background-color: var(--accent_red);
+		color: var(--primary_white);
 	}
 }
 
 .btn_primary-red {
 	background: var(--primary_red);
+	box-shadow: 0 0 3px var(--accent_red), 0 0 6px var(--primary_white), 0 0 3px var(--accent_red);
 }
 
 .btn_primary-black {
 	background: var(--primary_black);
+	box-shadow: 0 0 3px var(--primary_black), 0 0 6px var(--primary_white),
+		0 0 3px var(--primary_black);
 }
 
 .btn_primary-white {
 	background: var(--primary_white);
+	box-shadow: 0 0 3px var(--accent_red), 0 0 6px var(--primary_white), 0 0 3px var(--accent_red);
 }
 
 .btn_accent-green {
@@ -113,7 +118,7 @@ EX. JUMBOTRON FOR SHOP PAGE
 ------------------------------------------------------------------
 */
 .hero {
-	height: 40rem;
+	height: 60rem;
 	width: 80vw;
 	margin: 0 auto 12.5rem auto;
 }
@@ -154,7 +159,7 @@ CSS RULES ADDED TO characters.css
 }
 
 .card-body_character {
-	background: url(../assets/images/ST360_03_MindFlayer.webp);
+	background: url(../assets/images/ST360_03_MindFlayer.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -172,25 +177,33 @@ CSS RULES ADDED TO characters.css
 	height: auto;
 	max-width: 35rem;
 	padding: 2.5rem 2rem;
-	-webkit-box-shadow: 5px 5px 15px -7px rgba(0, 0, 0, 0.78);
-	box-shadow: 5px 5px 15px -7px rgba(0, 0, 0, 0.78);
+	box-shadow: 0 0 15px var(--primary_black);
+	background: var(--primary_white);
 }
 
 .card-header,
-.card-footer {
-	height: auto;
-	width: 100%;
-}
-
+.card-footer,
 .card-body {
 	height: auto;
 	width: 100%;
 }
 
+.card-footer {
+	padding-top: 1.5rem;
+}
+
 .card-image {
 	max-width: 100%;
 	height: auto;
+	background: var(--primary_black);
+	opacity: 80%;
 }
+
+.card-link:hover {
+	cursor: pointer;
+	text-shadow: 0 0 6px var(--accent_red), 0 0 6px var(--accent_red), 0 0 6px var(--accent_red);
+}
+
 /* END CARDS */
 
 /* 
@@ -205,7 +218,7 @@ CSS RULES ADDED TO characters.css
 	background-color: var(--primary_black);
 	grid-area: header;
 	display: flex;
-	margin-bottom: 5rem;
+	/* margin-bottom: 5rem; */
 }
 /* END HEADER */
 
@@ -214,37 +227,46 @@ CSS RULES ADDED TO characters.css
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-items: center;
+	justify-items: space-between;
 	align-items: center;
 }
 
 .nav__logo {
-	width: 70%;
 	padding-left: 5rem;
-	text-transform: uppercase;
+	width: 50%;
 }
 
 .nav__links {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: flex-end;
 	align-items: center;
-	width: 30%;
+	width: 50%;
+	padding-right: 5rem;
 }
 
 .nav__link {
 	font-family: var(--st_book);
 	font-size: var(--md);
 	text-transform: uppercase;
+	margin-left: 2.5rem;
 }
 
-.nav__link:hover {
-	border-bottom: 3px solid var(--primary_red);
+.nav__link_nav:hover,
+.nav__logo a:hover {
+	cursor: pointer;
+	text-shadow: 0 0 6px var(--accent_red), 0 0 6px var(--accent_red), 0 0 6px var(--accent_red);
 }
 
 .nav__link_social {
 	font-size: var(--lg);
 }
+
+.nav__link_social:hover {
+	text-shadow: 0 0 6px var(--primary_white), 0 0 6px var(--primary_white),
+		0 0 6px var(--primary_white);
+}
+
 /* END NAVIGATION */
 
 /* START FOOTER */
@@ -256,7 +278,7 @@ CSS RULES ADDED TO characters.css
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 12.5rem;
+	/* margin-top: 12.5rem; */
 	padding-left: 5rem;
 }
 /* END FOOTER */

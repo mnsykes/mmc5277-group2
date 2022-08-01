@@ -5,16 +5,6 @@
 	background-position: center; */
 }
 
-.heading {
-	text-align: center;
-	text-transform: uppercase;
-}
-
-.subheading {
-	text-align: center;
-	text-transform: uppercase;
-}
-
 .body-text {
 	font-size: var(--lg);
 }
@@ -41,18 +31,12 @@
 	text-align: center;
 }
 
-.about__grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 2.5rem;
-}
-
 .card-header_about {
 	color: var(--primary_white);
 }
 
 .card-body_about {
-	background: url(../assets/images/ST360_03_MindFlayer.webp);
+	background: url(../assets/images/ST360_03_MindFlayer.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -68,15 +52,15 @@
 .read-more {
 	color: var(--accent_red);
 	background-image: linear-gradient(var(--accent_red) 0 0);
-    background-size: 0%;
-    background-repeat: no-repeat;
-    transition: .4s, background-position 0s;
+	background-size: 0%;
+	background-repeat: no-repeat;
+	transition: 0.4s, background-position 0s;
 }
 
 .read-more:hover {
-    color: var(--primary_white);
-    background-size: 100%;
-    background-position: right;
-  }
+	color: var(--primary_white);
+	background-size: 100%;
+	background-position: right;
+}
 
 /* END ARTICLE LINK TRANSITION */

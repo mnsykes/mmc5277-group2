@@ -10,12 +10,31 @@
 	</head>
 	<body>
 		<div class="landing__container">
+			<div class="video__container">
+				<!-- ADD AUTOPLAY -->
+				<video class="video" autoplay muted>
+					<source src="assets/images/stranger.mov" />
+				</video>
+			</div>
 			<div class="landing__cta">
-				<h1 class="heading landing__cta_dim">Welcome to Hawkins</h1>
-				<button class="btn btn_primary landing__cta_dim">
-					<a href="home.html">Enter</a>
-				</button>
+				<a class="btn btn_primary-red" href="home.html">Enter</a>
 			</div>
 		</div>
 	</body>
+
+	<script>
+		console.log(window.innerWidth);
+		if (window.innerWidth > 1100) {
+			let cta = document.querySelector(".landing__cta");
+			let video = document.querySelector(".video");
+			window.onclick = () => (cta.style.display = "block");
+			video.onended = () => {
+				setTimeout(() => {
+					window.location.href = "https://mnsykes.github.io/mmc5277-group2/home.html";
+				}, 2000);
+			};
+		} else {
+			window.location.href = "https://mnsykes.github.io/mmc5277-group2/home.html";
+		}
+	</script>
 </html>

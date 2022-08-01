@@ -22,12 +22,12 @@
 				<!-- START NAV -->
 				<nav class="nav">
 					<div class="nav__logo">
-						<a href="home.html" class="subheading">Stranger Things</a>
+						<a href="home.html" class="subheading glow_dark">Stranger Things</a>
 					</div>
 					<div class="nav__links">
-						<a href="about.html" class="nav__link">About</a>
-						<a href="characters.html" class="nav__link">Characters</a>
-						<a href="shop.html" class="nav__link">Shop</a>
+						<a href="about.html" class="nav__link nav__link_nav glow_light">About</a>
+						<a href="characters.html" class="nav__link nav__link_nav glow_light">Characters</a>
+						<a href="shop.html" class="nav__link nav__link_nav glow_light">Shop</a>
 					</div>
 				</nav>
 				<!-- END NAV -->
@@ -36,105 +36,90 @@
 
 			<!-- START MAIN -->
 			<main class="main__wrapper">
-				<h1 class="heading">See You On The Other Side</h1>
 				<!-- START HERO -->
 				<section class="hero">
 					<div class="hero__jumbotron_shop">
-						<h2 class="subheading">Buy Some Waffles</h2>
-						<a href="#card__grid"><button class="btn btn_primary-red">Shop</button></a>
+						<h1 class="heading glow_red">Buy Stuff</h1>
+						<a href="#card__grid" class="btn btn_primary-red">Shop</a>
 					</div>
 				</section>
 				<!-- END HERO -->
 
 				<!-- START CONTENT -->
-				<section class="content">
-					<article class="content__article"></article>
+				<section id="content">
 					<section id="card__grid">
 						<div class="card text-center">
-							<div class="card-header">
-								<h3 class="section-headline">Clothing</h3>
-							</div>
+							<div class="card-header"></div>
 							<div class="card-body">
 								<img
 									class="card-image"
 									src="assets/images/clothing.png"
-									alt="Image of Stranger Things T-Shirt"
+									alt="Stranger Things T-Shirt"
 								/>
 							</div>
 							<div class="card-footer">
-								<button class="btn btn_shop btn_primary-red">Shop</button>
+								<a href="#" class="subheading glow_light card-link">Clothing</a>
 							</div>
 						</div>
 						<div class="card text-center">
-							<div class="card-header">
-								<h3 class="section-headline">Toys & Collectibles</h3>
-							</div>
+							<div class="card-header"></div>
 							<div class="card-body">
 								<img
 									class="card-image"
-									src="assets/images/collectibles.jpg"
-									alt="Image of Stranger Things Action Figures"
+									src="assets/images/collectibles.png"
+									alt="Stranger Things Action Figures"
 								/>
 							</div>
 							<div class="card-footer">
-								<button class="btn btn_shop btn_primary-red">Shop</button>
+								<a href="#" class="subheading glow_light card-link">Collectibles</a>
 							</div>
 						</div>
 						<div class="card text-center">
-							<div class="card-header text-center">
-								<h3 class="section-headline">Waffles</h3>
+							<div class="card-header text-center"></div>
+							<div class="card-body">
+								<img class="card-image" src="assets/images/eggo.png" alt="Eggo Waffles" />
 							</div>
+							<div class="card-footer">
+								<a href="#" class="subheading glow_light card-link">Waffles</a>
+							</div>
+						</div>
+						<div class="card text-center">
+							<div class="card-header"></div>
 							<div class="card-body">
 								<img
 									class="card-image"
-									src="assets/images/eggo.png"
-									alt="Image of Eggo Waffles"
+									src="assets/images/music.png"
+									alt="Stranger Things Cassette Player and Cassette"
 								/>
 							</div>
 							<div class="card-footer">
-								<button class="btn btn_shop btn_primary-red">Shop</button>
+								<a href="#" class="subheading glow_light card-link">Books & Music</a>
 							</div>
 						</div>
 						<div class="card text-center">
-							<div class="card-header">
-								<h3 class="section-headline">Books & Music</h3>
-							</div>
-							<div class="card-body">
-								<img class="card-image" src="assets/images/music.jpg" alt="Image of collectibles" />
-							</div>
-							<div class="card-footer">
-								<button class="btn btn_shop btn_primary-red">Shop</button>
-							</div>
-						</div>
-						<div class="card text-center">
-							<div class="card-header">
-									<h3 class="section-headline">Costumes</h3>
-								</h3>
-							</div>
+							<div class="card-header"></div>
 							<div class="card-body">
 								<img
 									class="card-image"
-									src="assets/images/demogorgon.jpg"
-									alt="Image of collectibles"
+									src="assets/images/demogorgon.png"
+									alt="Demogorgon Costume"
 								/>
 							</div>
 							<div class="card-footer">
-								<button class="btn btn_shop btn_primary-red">Shop</button>
+								<a href="#" class="subheading glow_light card-link">Costumes</a>
 							</div>
 						</div>
 						<div class="card text-center">
-							<div class="card-header">
-								<h3 class="section-headline">Accessories</h3>
-							</div>
+							<div class="card-header"></div>
 							<div class="card-body">
 								<img
 									class="card-image"
-									src="assets/images/accessories.png"
-									alt="Image of collectibles"
+									src="assets/images/accesories.png"
+									alt="Multiple Stranger Things Products"
 								/>
 							</div>
 							<div class="card-footer">
-								<button class="btn btn_shop btn_primary-red">Shop</button>
+								<a href="#" class="subheading glow_light card-link">Accessories</a>
 							</div>
 						</div>
 					</section>
@@ -145,23 +130,30 @@
 
 			<!-- START FOOTER -->
 			<footer class="footer">
-				<div class="subheading">Stranger Things &copy;Netflix 2022</div>
+				<div class="footer__logo">
+					<div class="subheading glow_dark">Stranger Things</div>
+					<div class="subheading glow_dark">&copy;Netflix 2022</div>
+				</div>
 				<div class="nav__links">
 					<a
 						href="https://twitter.com/Stranger_Things?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-						class="nav__link"
+						class="nav__link glow_dark"
 						target="_blank"
 					>
 						<i class="fa-brands fa-twitter nav__link_social"></i>
 					</a>
 					<a
 						href="https://www.instagram.com/strangerthingstv/?hl=en"
-						class="nav__link"
+						class="nav__link glow_dark"
 						target="_blank"
 					>
 						<i class="fa-brands fa-instagram nav__link_social"></i>
 					</a>
-					<a href="https://www.facebook.com/StrangerThingsTV/" class="nav__link" target="_blank">
+					<a
+						href="https://www.facebook.com/StrangerThingsTV/"
+						class="nav__link glow_dark"
+						target="_blank"
+					>
 						<i class="fa-brands fa-facebook nav__link_social"></i>
 					</a>
 				</div>
