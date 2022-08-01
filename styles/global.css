@@ -109,5 +109,9 @@ body {
 	.content__article-image {
 		display: none;
 	}
+
+	.heading_home {
+		font-size: var(--xl);
+	}
 }
 /* END MOBILE PHONE MEDIA QUERIES */
