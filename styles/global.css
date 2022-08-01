@@ -41,7 +41,6 @@ body {
 /* START TABLET MEDIA QUERIES */
 @media screen and (min-width: 769px) and (max-width: 1100) {
 	.main__wrapper {
-		/* max-width: 95vw; */
 		background: green;
 	}
 
