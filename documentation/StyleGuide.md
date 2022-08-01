@@ -1,16 +1,17 @@
 # Colors
 
-- Primary: #a41d17
-- Background: #0f0f27
-- Accent 1: #03300b
-- Accent 2: #db512d
-- Accent 3: #e12712
-- White: #f1f2f2;
-- Primary color: #0f0f27
+    Primary red: #a41d17;
+    Primary black: #0f0f27;
+    Primary white: #f1f2f2;
+    Accent green: #03300b;
+    Accent orange: #db512d;
+    Accent red: #e12712;
 
 # Fonts
 
-- Logo and headers: ITC Benguiat(https://freefontsdownload.net/free-benguiatstdbold-font-138544.htm)
+- BenguitStd-Book
+- BenguitStd-Medium
+- BenguitStd-Bold
 
 # Typography
 
