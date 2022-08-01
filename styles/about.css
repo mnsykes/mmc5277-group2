@@ -5,16 +5,6 @@
 	background-position: center; */
 }
 
-.heading {
-	text-align: center;
-	text-transform: uppercase;
-}
-
-.subheading {
-	text-align: center;
-	text-transform: uppercase;
-}
-
 .body-text {
 	font-size: var(--lg);
 }
