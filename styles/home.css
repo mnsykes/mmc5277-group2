@@ -25,25 +25,22 @@
 }
 
 .body-text_home {
-	color: whitesmoke;
+	color: var(--primary_white);
+	font-size: var(--lg);
 }
 
-/* .heading_home, .subheading_home {
-	color: whitesmoke;
-} */
+.heading_home {
+	margin-bottom: 25rem;
+}
 
 .subheading_home {
-	font-size: var(--lg);
+	font-size: var(--xl);
 }
 
 .header_home,
 .footer_home {
 	margin: 0;
 }
-
-/* .content_background {
-	background-color: rgba(3, 48, 11, 0.75);
-} */
 
 #content {
 	max-width: 50vw;

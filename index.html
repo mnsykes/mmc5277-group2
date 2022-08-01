@@ -23,13 +23,18 @@
 	</body>
 
 	<script>
-		let cta = document.querySelector(".landing__cta");
-		let video = document.querySelector(".video");
-		window.onclick = () => (cta.style.display = "block");
-		video.onended = () => {
-			setTimeout(() => {
-				window.location.href = "https://mnsykes.github.io/mmc5277-group2/home.html";
-			}, 2000);
-		};
+		console.log(window.innerWidth);
+		if (window.innerWidth > 1100) {
+			let cta = document.querySelector(".landing__cta");
+			let video = document.querySelector(".video");
+			window.onclick = () => (cta.style.display = "block");
+			video.onended = () => {
+				setTimeout(() => {
+					window.location.href = "https://mnsykes.github.io/mmc5277-group2/home.html";
+				}, 2000);
+			};
+		} else {
+			window.location.href = "https://mnsykes.github.io/mmc5277-group2/home.html";
+		}
 	</script>
 </html>
